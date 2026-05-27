@@ -2,10 +2,10 @@
 
 | Name | Role | Module/Task | Evidence to Submit | Location in Repo |
 |---|---|---|---|---|
-| บงกชกร จันเกตุ | Embedded / IoT Developer |  |  |  |
-| พัชราภา รุ่งเรือง | Project Manager / Scrum Lead |  |  |  |
-| ภูรี เอกา |  |  |  |  |
-| สุภัสสร บุญครอง |  |  |  |  |
+| บงกชกร จันเกตุ | Embedded / IoT Developer | M3.1 ESP32 + Arduino |  |  |
+| พัชราภา รุ่งเรือง | Project Manager / Scrum Lead | PM Skills |  |  |
+| ภูรี เอกา | Backend / Cloud Developer | M3.4 Firebase / M3.3 MQTT |  |  |
+| สุภัสสร บุญครอง | Frontend / UX Developer | UX-Product |  |  |
 
 ## Day 2 Evidence Log
 
