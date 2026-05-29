@@ -1,1 +1,40 @@
+#include "DHT.h"
 
+#define DHTPIN 15          // ขาเซนเซอร์ DHT
+#define DHTTYPE DHT22      // ใน Wokwi แนะนำให้เลือกใช้ DHT22 เพราะเสถียรกว่า
+#define FAN_PIN 2          // ขาไฟ LED จำลองพัดลม
+#define THRESHOLD_TEMP 30.0 // เกณฑ์อุณหภูมิที่ตั้งไว้ (ถ้าเกินจะเปิดพัดลม)
+
+DHT dht(DHTPIN, DHTTYPE);
+
+void setup() {
+  Serial.begin(115200);
+  dht.begin();
+  pinMode(FAN_PIN, OUTPUT);
+}
+
+void loop() {
+  delay(2000); // รอเซนเซอร์อ่านค่าทุกๆ 2 วินาที
+
+  float temperature = dht.readTemperature(); // อ่านค่าองศาเซลเซียส
+
+  // เช็กว่าเซนเซอร์อ่านค่าได้ปกติไหม
+  if (isnan(temperature)) {
+    Serial.println("Failed to read from DHT sensor!");
+    return;
+  }
+
+  // พิมพ์ค่าอุณหภูมิออกหน้าจอ Serial Monitor
+  Serial.print("Temperature: ");
+  Serial.print(temperature);
+  Serial.print("°C | ");
+
+  // ลอจิกการตัดสินใจควบคุมพัดลม (Core Flow)
+  if (temperature > THRESHOLD_TEMP) {
+    digitalWrite(FAN_PIN, HIGH); // สั่งเปิดไฟ LED (พัดลมเปิด)
+    Serial.println("FAN STATUS: ON [Hot!]");
+  } else {
+    digitalWrite(FAN_PIN, LOW);  // สั่งปิดไฟ LED (พัดลมปิด)
+    Serial.println("FAN STATUS: OFF [Normal]");
+  }
+}
