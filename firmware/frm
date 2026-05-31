@@ -3,7 +3,7 @@
 - DHT11 Temperature Sensor
 - LED (Fan Simulation)
 
-Functions:
+Functions
 - อ่านค่าอุณหภูมิจาก DHT11
 - ประมวลผลค่าอุณหภูมิ
 - เปิด LED (แทนพัดลม) เมื่ออุณหภูมิสูงกว่า 30°C
