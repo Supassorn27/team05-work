@@ -29,3 +29,10 @@
 พัฒนา Prototype v1 สำหรับระบบตรวจวัดอุณหภูมิสัตว์เลี้ยง
 โดยให้เซ็นเซอร์ตรวจวัดอุณหภูมิ ส่งข้อมูลไปยัง Dashboard
 และสามารถสั่งเปิดพัดลมอัตโนมัติเมื่ออุณหภูมิสูงเกินค่าที่กำหนด
+
+## Documents
+- Core Flow: docs/core-flow.md
+- Sprint Board: docs/sprint-board-link.md
+- Evidence Log: docs/evidence-log.md
+- Blocker Log: docs/blocker-log.md
+- Demo Script: docs/demo-script.md
