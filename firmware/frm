@@ -1,1 +1,11 @@
 
+- ESP32
+- DHT11 Temperature Sensor
+- LED (Fan Simulation)
+
+Functions:
+- อ่านค่าอุณหภูมิจาก DHT11
+- ประมวลผลค่าอุณหภูมิ
+- เปิด LED (แทนพัดลม) เมื่ออุณหภูมิสูงกว่า 30°C
+- ปิด LED (แทนพัดลม) เมื่ออุณหภูมิต่ำกว่า 30°C
+- แสดงผลบน Serial Monitor
