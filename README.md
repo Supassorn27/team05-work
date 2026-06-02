@@ -36,3 +36,24 @@
 - Evidence Log: docs/evidence-log.md
 - Blocker Log: docs/blocker-log.md
 - Demo Script: docs/demo-script.md
+
+## Prototype v1 Readiness Check
+
+| รายการ	 | สถานะ | หลักฐาน / Link |
+|---|---|---|
+| Prototype เปิดดูหรือทดลองได้ |	Partly Ready |	ux-product/figma.md |
+| Core Flow หลักยังอยู่ครบ |	Ready	| docs/core-flow.md |
+| มี demo link / file / device / Figma / notebook |	Partly Ready | ux-product/figma.md |
+| มี known issues ที่ทีมรู้อยู่แล้ว |	มี	 | docs/known-issues.md ||
+| มี workaround ถ้าระบบพัง |	มี |	ใช้ Figma Prototype จำลองการทำงาน |
+| ผู้ใช้สามารถลอง task ได้โดยไม่ต้องอธิบายยาว |	Parly Ready | ผู้ใช้สามารถทำ Task หลักได้ แต่ยังต้องมีการอธิบายบางส่วนเนื่องจากระบบยังเป็น Prototype |
+
+## Prototype v1 ที่จะใช้ทดสอบ
+
+| รายการ | คำตอบ |
+| --- | --- |
+| Prototype ที่ใช้ทดสอบคืออะไร | Figma Prototype ระบบตรวจวัดอุณหภูมิและควบคุมพัดลมอัตโนมัติ |
+| Link / File / Device / Location | https://github.com/Supassorn27/team05-work/blob/7ba150716b658e61ffe5c2346d625531af02f7fd/ux-product/figma.md |
+| Core Flow ที่จะทดสอบ | ผู้ใช้เปิด Dashboard → ดูค่าอุณหภูมิ → ระบบเปลี่ยนสถานะพัดลม ON/OFF ตามอุณหภูมิ → ผู้ใช้ดูการแจ้งเตือน |
+| สิ่งที่ prototype ทำได้แล้ว | แสดงอุณหภูมิ, สถานะพัดลม |
+| ข้อจำกัดที่ต้องบอกผู้ใช้ก่อน test | เป็นการจำลองผ่าน figma ยังไม่ได้เชื่อมต่อข้อมูลจาก ESP32 แบบ real-time |
