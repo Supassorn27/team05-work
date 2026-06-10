@@ -21,6 +21,6 @@
 
 | Feedback / Observation | จากผู้ใช้ | หมวด | กระทบ Core Flow หรือไม่ | Evidence |
 | --- | --- | --- | --- | --- |
-| ไม่แน่ใจว่าข้อมูลอุณหภูมิอัปเดตแบบ Real-time หรือไม่ | User 1 | Content | Yes | Observation Notes |
-| ดูสถานะพัดลมได้ง่ายและเข้าใจได้ทันที | User 2 | UX | No | Feedback |
-| ไม่เข้าใจเงื่อนไขการเปิดพัดลมอัตโนมัติ | User 2 | Content | Yes | Observation Notes |
+| ไม่แน่ใจว่าข้อมูลอุณหภูมิอัปเดตแบบ Real-time หรือไม่ | กังฟู | Content | Yes | Observation Notes |
+| ดูสถานะพัดลมได้ง่ายและเข้าใจได้ทันที | อาโป | UX | No | Feedback |
+| ไม่เข้าใจเงื่อนไขการเปิดพัดลมอัตโนมัติ | อาโป | Content | Yes | Observation Notes |
