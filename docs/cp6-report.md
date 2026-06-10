@@ -2,8 +2,8 @@
 
 | ส่วนของ CP6 | รายละเอียด | Link / Evidence |
 | --- | --- | --- |
-| 1. User Test Plan | ทดสอบกับใคร task อะไร วิธีเก็บ feedback | ระบบตรวจวัดอุณหภูมิและควบคุมพัดลมอัตโนมัติสำหรับสัตว์เลี้ยง พร้อม Dashboard แสดงผลแบบ Real-time |
-| 2. User Test Evidence | รูป วิดีโอ screenshot form response interview note |  |
+| 1. User Test Plan | ทดสอบกับใคร task อะไร วิธีเก็บ feedback | https://drive.google.com/drive/folders/1h37D0h2xNp-r6u4lQtalN3eaQDkkvWbQ?usp=sharing |
+| 2. User Test Evidence | รูป วิดีโอ screenshot form response interview note | https://drive.google.com/drive/folders/1h37D0h2xNp-r6u4lQtalN3eaQDkkvWbQ?usp=sharing |
 | 3. Feedback Summary | สรุป feedback ดิบจากผู้ใช้ | |
 | 4. Insight | ทีมเรียนรู้อะไรจาก feedback | -  ผู้ใช้ต้องการข้อมูลที่อัปเดตเร็วเพื่อเพิ่มความมั่นใจในการใช้งาน - ผู้ใช้มองว่าการแสดงผลช่วยตรวจสอบการทำงานของระบบได้ - การแสดงสถานะที่ชัดเจนช่วยให้เข้าใจระบบได้เร็วขึ้น |
 | 5. Priority Fix List | สิ่งที่ต้องแก้เรียงความสำคัญ |   1. อุณหภูมิอัปเดตช้าบางช่วง 2. สถานะการทำงานของระบบยังไม่ชัด |
