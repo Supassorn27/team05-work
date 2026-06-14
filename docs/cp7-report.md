@@ -1,4 +1,4 @@
-๒๒ CP7 — Prototype v2 Improvement Report + Final Demo
+## CP7 — Prototype v2 Improvement Report + Final Demo
 
 | ส่วนของ CP7 | รายละเอียด | Link / Evidence |
 | --- | --- | --- |
