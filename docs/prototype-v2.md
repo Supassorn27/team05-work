@@ -1,3 +1,6 @@
+## Core Prototype v2
+DHT11 วัดอุณหภูมิและความชื้น → ESP32 อ่านค่าจากเซ็นเซอร์ → ส่งข้อมูลไปยัง Firebase Realtime Database → Flutter App ดึงข้อมูลจาก Firebase → แสดงอุณหภูมิ ความชื้น และสถานะพัดลมแบบ Real-time → แจ้งเตือนเมื่ออุณหภูมิสูงเกินค่าที่กำหนด
+
 ## Prototype v2 Scope Lock
 
 | Must Fix in Sprint 5 | Nice to Have | Not Doing / Later |
