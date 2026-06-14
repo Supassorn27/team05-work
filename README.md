@@ -35,7 +35,7 @@
 - Blocker Log: docs/blocker-log.md
 - Demo Script: docs/demo-script.md
 
-## Prototype v1 Readiness Check
+## Prototype v2 Readiness Check
 
 | รายการ	 | สถานะ | หลักฐาน / Link |
 |---|---|---|
