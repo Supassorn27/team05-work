@@ -60,3 +60,6 @@
 - Coordinated team tasks and monitored progress.
 - Updated project documentation and README.
 - Prepared Final Demo and submission package.
+
+## Sprint 5 Goal
+ปรับปรุง Prototype ให้สามารถแสดงข้อมูลอุณหภูมิและความชื้นแบบ Real-time พร้อมเพิ่มระบบแจ้งเตือนเมื่ออุณหภูมิสูงเกินค่าที่กำหนด
