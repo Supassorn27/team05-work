@@ -1,1 +1,111 @@
+#include <WiFi.h>
+#include <Firebase_ESP_Client.h>
+#include <DHT.h>
 
+#define WIFI_SSID "พัด"
+#define WIFI_PASSWORD "patpatpat"
+
+#define DHTPIN 27
+#define DHTTYPE DHT11
+
+#define RELAY_PIN 26
+
+#define DATABASE_URL "https://petcare-iot-163ff-default-rtdb.asia-southeast1.firebasedatabase.app"
+
+FirebaseData fbdo;
+FirebaseAuth auth;
+FirebaseConfig config;
+
+DHT dht(DHTPIN, DHTTYPE);
+
+void setup() {
+
+  Serial.begin(115200);
+
+  WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
+
+  Serial.print("Connecting WiFi");
+
+  while (WiFi.status() != WL_CONNECTED) {
+
+    Serial.print(".");
+
+    delay(500);
+
+  }
+
+  Serial.println("");
+
+  Serial.println("WiFi Connected");
+
+  config.api_key = "AIzaSyD7p4alIgnlhfogkvh_4zbI2uDEn1xfBms";
+  config.database_url = DATABASE_URL;
+
+  if (Firebase.signUp(&config, &auth, "", "")) {
+  Serial.println("Firebase SignUp OK");
+} else {
+  Serial.println(config.signer.signupError.message.c_str());
+}
+
+Firebase.begin(&config, &auth);
+Firebase.reconnectWiFi(true);
+
+  Firebase.begin(&config, &auth);
+  Firebase.reconnectWiFi(true);
+
+  pinMode(RELAY_PIN, OUTPUT);
+
+  digitalWrite(RELAY_PIN, LOW);
+
+  dht.begin();
+
+  Serial.println("PetCare Started");
+}
+
+void loop() {
+
+  float temperature = dht.readTemperature();
+  float humidity = dht.readHumidity();
+
+  if (isnan(temperature)) {
+    Serial.println("DHT Error");
+    delay(2000);
+    return;
+  }
+
+  Serial.print("Temperature: ");
+  Serial.println(temperature);
+
+  Serial.print("Humidity: ");
+  Serial.println(humidity);
+
+  if (Firebase.RTDB.setFloat(&fbdo, "/temperature", temperature)) {
+  Serial.println("Temperature Sent");
+} else {
+  Serial.println(fbdo.errorReason());
+}
+
+  if (Firebase.RTDB.setFloat(&fbdo, "/humidity", humidity)) {
+  Serial.println("Humidity Sent");
+} else {
+  Serial.println(fbdo.errorReason());
+}
+  if (temperature >= 30) {
+
+    digitalWrite(RELAY_PIN, HIGH);
+
+    Serial.println("Fan ON");
+
+    Firebase.RTDB.setString(&fbdo, "/fanStatus", "ON");
+
+  } else {
+
+    digitalWrite(RELAY_PIN, LOW);
+
+    Serial.println("Fan OFF");
+
+    Firebase.RTDB.setString(&fbdo, "/fanStatus", "OFF");
+  }
+
+  delay(2000);
+}
