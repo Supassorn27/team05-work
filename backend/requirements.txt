@@ -1,1 +1,1 @@
-Flask
+โปรเจกต์นี้ใช้ ESP32, Firebase Realtime Database และ Web Dashboard ในการทำงาน
