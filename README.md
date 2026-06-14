@@ -55,3 +55,8 @@
 | Core Flow ที่จะทดสอบ | ผู้ใช้เปิด Dashboard → ดูค่าอุณหภูมิ → ระบบเปลี่ยนสถานะพัดลม ON/OFF ตามอุณหภูมิ → ผู้ใช้ดูการแจ้งเตือน |
 | สิ่งที่ prototype ทำได้แล้ว | แสดงอุณหภูมิ, สถานะพัดลม |
 | ข้อจำกัดที่ต้องบอกผู้ใช้ก่อน test | เป็นการจำลองผ่าน figma ยังไม่ได้เชื่อมต่อข้อมูลจาก ESP32 แบบ real-time |
+
+## Sprint 5 Contribution
+- Coordinated team tasks and monitored progress.
+- Updated project documentation and README.
+- Prepared Final Demo and submission package.
